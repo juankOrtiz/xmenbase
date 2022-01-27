@@ -16,10 +16,10 @@ class CreateIssuesTable extends Migration
         Schema::create('issues', function (Blueprint $table) {
             $table->id();
             $table->unsignedBigInteger("title_id");
-            $table->string("number");
+            $table->string("name");
             $table->unsignedInteger("order");
-            $table->date("published_at");
-            $table->string("cover_image");
+            $table->date("published_at")->nullable();
+            $table->string("cover_image")->nullable();
             $table->timestamps();
 
             $table->foreign("title_id")->references("id")->on("titles");
