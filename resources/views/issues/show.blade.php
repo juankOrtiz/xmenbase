@@ -20,7 +20,7 @@
                 <h2 class="text-xl font-semibold text-gray-800 dark:text-white">Issue data</h2>
 
                 <p class="py-1 pt-2 text-gray-700 dark:text-gray-400">Name: {{ $issue->name }}</p>
-                <p class="py-1 text-gray-700 dark:text-gray-400">Published at: {{ \Carbon\Carbon::parse($issue->published_at)->format('d/m/Y'); }}</p>
+                <p class="py-1 text-gray-700 dark:text-gray-400">Published at: {{ \Carbon\Carbon::parse($issue->published_at)->format('Y-m-d'); }}</p>
                 @if ($issue->cover_image)
                     <img src="{{ $issue->cover_image }}" alt="Cover of {{ $issue->name }}">
                 @endif
