@@ -49,4 +49,4 @@ To run this project on a local computer you need to have installed:
 
 ## License
 
-X-Men Base is open-sourced software licensed under the [MIT license](https://opensource.org/licenses/MIT).
+X-Men Base is open-source software licensed under the [MIT license](https://opensource.org/licenses/MIT).
