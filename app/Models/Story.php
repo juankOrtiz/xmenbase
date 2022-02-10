@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Story extends Model
 {
     use HasFactory;
+
+    public function issue() {
+        return $this->belongsTo(Issue::class);
+    }
 }

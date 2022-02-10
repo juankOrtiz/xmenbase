@@ -8,4 +8,8 @@ use Illuminate\Database\Eloquent\Model;
 class Issue extends Model
 {
     use HasFactory;
+
+    public function stories() {
+        return $this->hasMany(Story::class)->orderBy('order');
+    }
 }

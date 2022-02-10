@@ -43,7 +43,7 @@ class StorySeeder extends Seeder
             ],
             [
                 'issue_id' => Issue::where('name', 'A+X #3')->first()->id,
-                'name' => 'Hawkeye + Gambi',
+                'name' => 'Hawkeye + Gambit',
                 'order' => 2,
             ],
         ];
