@@ -1,15 +1,4 @@
-<!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>List of Issues | X-Men Base</title>
-    <link href="/css/app.css" rel="stylesheet">
-</head>
-
-<body>
+<x-layout>
     <div class="py-12"> 
         <div class="max-w-md mx-auto overflow-hidden bg-white rounded-lg shadow-lg dark:bg-gray-800">
             <div class="flex items-center px-6 py-3 bg-gray-900">
@@ -40,5 +29,4 @@
             </div>
         </div>
     </div>
-</body>
-</html>
+</x-layout>
