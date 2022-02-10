@@ -1,7 +1,8 @@
 <?php
 
-use App\Http\Controllers\IssueController;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\IssueController;
+use App\Http\Controllers\TitleController;
 
 /*
 |--------------------------------------------------------------------------
@@ -23,5 +24,6 @@ Route::get('/dashboard', function () {
 })->middleware(['auth'])->name('dashboard');
 
 Route::resource('issues', IssueController::class);
+Route::resource('titles', TitleController::class);
 
 require __DIR__.'/auth.php';

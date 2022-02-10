@@ -12,4 +12,8 @@ class Issue extends Model
     public function stories() {
         return $this->hasMany(Story::class)->orderBy('order');
     }
+
+    public function title() {
+        return $this->belongsTo(Title::class);
+    }
 }
